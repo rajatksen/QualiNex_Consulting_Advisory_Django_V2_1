@@ -1,5 +1,77 @@
-{% extends 'practice/base.html' %}{% block title %}Experience | QualiNex{% endblock %}{% block content %}
-<section class="page-hero"><div class="container"><span class="eyebrow"><i></i> EXECUTIVE EXPERIENCE</span><h1>Built inside complex manufacturing environments — now available to clients as an advisor.</h1><p>Subhamjit Deb’s supplied résumé and public LinkedIn profile show 22+ years across manufacturing quality, operational excellence, pre-production, customer quality, supplier quality and continuous improvement.</p></div></section>
-<section class="section"><div class="container timeline"><article><div class="time">2009 — 2026</div><div><h2>Global Secure Technology Manufacturer — Deputy General Manager, Manufacturing Quality &amp; Operational Excellence</h2><p>Enterprise-wide Manufacturing Quality, Operational Excellence and Pre-Production leadership supporting global customers and multi-site manufacturing programmes.</p><ul><li>Quality strategy, transformation and preventive systems</li><li>Customer complaints, 8D / QRCI and CAPA</li><li>Supplier quality strategy, audits and improvement</li><li>PFMEA, quality planning and risk management</li><li>Quality KPI governance and cross-functional reviews</li><li>Digital quality systems and capability building</li></ul><div class="tags"><span>Smart Card</span><span>Secure Technology</span><span>Global Manufacturing</span></div></div></article><article><div class="time">2005 — 2009</div><div><h2>Secure Technology Manufacturer — Senior Engineer, Quality &amp; Supplier Quality</h2><p>Supplier quality systems, audits, NCR resolution, customer complaint investigation and corrective-action programmes.</p></div></article><article><div class="time">2004 — 2005</div><div><h2>Automotive Component Manufacturer — Engineer, Production &amp; Quality</h2><p>Tier-1 automotive component manufacturing, production quality, NPI, quality planning and customer quality exposure.</p></div></article><article><div class="time">2004</div><div><h2>Global IT &amp; Engineering Services Company — Quality Officer, Automotive Wiring Harness</h2><p>APQP, PPAP and PFMEA support for automotive projects with process-quality and customer-quality requirements.</p></div></article></div></section>
-<section class="section navy"><div class="container"><span class="eyebrow"><i></i> GLOBAL PROGRAMME EXPOSURE</span><h2 class="white-title">USA · Japan · Colombia · Bangladesh · Russia · China · France</h2><p class="white-copy">The résumé documents global quality-system deployments, factory setup and operational-improvement initiatives across international manufacturing sites.</p><div class="country-strip"><span>USA</span><span>Japan</span><span>Colombia</span><span>Bangladesh</span><span>Russia</span><span>China</span><span>France</span></div></div></section>
+{% extends 'practice/base.html' %}
+{% load static %}
+{% block title %}Experience | QualiNex Consulting & Advisory{% endblock %}
+{% block content %}
+<section class="experience-v31-hero">
+  <div class="container experience-v31-hero-grid">
+    <div class="experience-v31-copy">
+      <span class="eyebrow"><i></i> EXPERIENCE &amp; EVIDENCE</span>
+      <h1>Experience that <span>Drives Real Outcomes.</span></h1>
+      <p class="experience-v31-lead">Practical experience across manufacturing quality, operational excellence, customer and supplier quality, pre-production, risk and capability development—applied to solve complex problems and build durable operating discipline.</p>
+      <div class="experience-v31-proof">
+        <div><strong>Practical expertise</strong><span>Factory-facing problem solving and operating-system thinking.</span></div>
+        <div><strong>Measured impact</strong><span>Outcomes connected to quality, cost, performance and capability.</span></div>
+        <div><strong>Cross-functional leadership</strong><span>Quality, manufacturing, engineering and operations.</span></div>
+        <div><strong>Global perspective</strong><span>Multi-country programme exposure in manufacturing environments.</span></div>
+      </div>
+    </div>
+    <div class="experience-v31-visual" aria-label="Digital representation of connected quality, risk, operations, data and capability">
+      <div class="experience-v31-brain-frame">
+        <img src="{% static 'practice/images/digital_brain_experience_v35.png' %}" alt="Connected quality, risk, operations, data and capability" width="560" height="420" fetchpriority="high">
+        <div class="experience-v31-labels" aria-label="Experience dimensions">
+          <button type="button" class="experience-v31-label" aria-pressed="false"><b>QUALITY</b><span>Built-in, not inspected</span></button>
+          <button type="button" class="experience-v31-label" aria-pressed="false"><b>RISK</b><span>Prevention and control</span></button>
+          <button type="button" class="experience-v31-label" aria-pressed="false"><b>OPERATIONS</b><span>Stable and measurable</span></button>
+          <button type="button" class="experience-v31-label" aria-pressed="false"><b>DATA</b><span>Evidence to action</span></button>
+          <button type="button" class="experience-v31-label" aria-pressed="false"><b>CAPABILITY</b><span>Knowledge that stays</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="experience-v31-kpis" aria-label="Selected practice outcomes">
+  <div class="container experience-v31-kpi-grid">
+    <div><strong>96%</strong><span>Customer complaint reduction</span></div>
+    <div><strong>70%</strong><span>Cost of Poor Quality reduction</span></div>
+    <div><strong>~40%</strong><span>Waste reduction in focus areas</span></div>
+    <div><strong>55+</strong><span>Improvement projects</span></div>
+    <div><strong>200+</strong><span>Professionals led</span></div>
+    <div><strong>320+</strong><span>Professionals trained</span></div>
+  </div>
+</section>
+
+<section class="section experience-v31-areas">
+  <div class="container experience-v31-area-layout">
+    <div class="experience-v31-area-intro">
+      <span class="eyebrow dark"><i></i> EXPERIENCE AREAS</span>
+      <h2>From Challenges to Lasting Impact.</h2>
+      <div class="section-rule"></div>
+      <p>Hands-on experience across the manufacturing value chain—from strategy and new product introduction to customer and supplier quality, operational improvement and digital quality systems.</p>
+      <a class="button primary" href="{% url 'contact' %}">Discuss Your Requirements <span>→</span></a>
+    </div>
+    <div class="experience-v31-card-grid">
+      <article><div class="experience-v31-card-icon">Q</div><h3>Quality Strategy &amp; Transformation</h3><ul><li>Quality vision, strategy and roadmaps</li><li>Enterprise quality systems and governance</li><li>Preventive quality and management routines</li><li>Sustainable performance improvement</li></ul></article>
+      <article><div class="experience-v31-card-icon">C</div><h3>Customer Quality &amp; Corrective Action</h3><ul><li>Customer complaints and escalation response</li><li>8D / QRCI and CAPA programmes</li><li>NCR resolution and corrective-action discipline</li><li>Recurrence prevention and closure effectiveness</li></ul></article>
+      <article><div class="experience-v31-card-icon">S</div><h3>Supplier Quality &amp; Development</h3><ul><li>Supplier quality strategy and audit activity</li><li>Supplier corrective action and NCR resolution</li><li>Supplier improvement and capability building</li><li>Incoming-risk linkage to plant performance</li></ul></article>
+      <article><div class="experience-v31-card-icon">N</div><h3>Pre-production, NPI &amp; Risk</h3><ul><li>NPI and pre-production quality planning</li><li>APQP, PPAP and PFMEA support</li><li>Risk management and preventive controls</li><li>Launch and process readiness</li></ul></article>
+      <article><div class="experience-v31-card-icon">O</div><h3>Operational Excellence &amp; Improvement</h3><ul><li>Lean Six Sigma and structured problem solving</li><li>Waste, productivity and process improvement</li><li>Process capability and loss reduction</li><li>Benefits tied to operating outcomes</li></ul></article>
+      <article><div class="experience-v31-card-icon">D</div><h3>Digital Quality &amp; Capability</h3><ul><li>Digital quality systems and information flows</li><li>Quality dashboards and management visibility</li><li>Capability building and coaching</li><li>Industry 4.0 and data-led decision readiness</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="section navy experience-v31-global">
+  <div class="container experience-v31-global-grid">
+    <div><span class="eyebrow"><i></i> GLOBAL PROGRAMME EXPOSURE</span><h2>Experience shaped by international manufacturing environments.</h2><p>International programme exposure documented in the supplied practice material includes:</p></div>
+    <div class="experience-v31-country-grid"><span>USA</span><span>Japan</span><span>Colombia</span><span>Bangladesh</span><span>Russia</span><span>China</span><span>France</span></div>
+  </div>
+</section>
+
+<section class="section experience-v31-fit">
+  <div class="container experience-v31-fit-grid">
+    <div class="experience-v31-fit-card dark"><span class="eyebrow"><i></i> WHEN EXPERIENCE MATTERS MOST</span><h2>When a quality problem has become a business problem.</h2><ul><li>Customer escalation or recurring defects need a fact-based response.</li><li>Supplier instability is affecting production, delivery or customer confidence.</li><li>Quality and operations need one performance language and operating rhythm.</li><li>A launch, transformation or risk issue needs experienced coordination.</li></ul></div>
+    <div class="experience-v31-fit-card light"><span class="eyebrow dark"><i></i> THE QUALINEX VALUE</span><h2>Senior practitioner thinking translated into a sharper path to action.</h2><div class="experience-v31-path"><div><b>See the signal</b><span>Build the fact base.</span></div><div><b>Find the driver</b><span>Separate symptom from system.</span></div><div><b>Change the routine</b><span>Strengthen process and control.</span></div><div><b>Leave capability</b><span>Transfer ownership and sustainment.</span></div></div><a class="button primary" href="{% url 'contact' %}">Book Consultation <span>→</span></a></div>
+  </div>
+</section>
 {% endblock %}

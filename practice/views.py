@@ -1,3 +1,4 @@
+import os
 from django.contrib import messages
 from django.shortcuts import redirect, render
 from .forms import EnquiryForm
@@ -97,7 +98,12 @@ ENGAGEMENTS = {
 }
 
 def common(request):
-    return {'linkedin':'https://www.linkedin.com/in/subhamjit-deb-82686238','email':'mailto:subham81@yahoo.com','whatsapp':'https://wa.me/919818027177'}
+    return {
+        # Email and WhatsApp are intentionally active; environment variables can override these defaults.
+        'linkedin': '',  # Reserved/inactive until a public QualiNex LinkedIn URL is approved.
+        'email': os.getenv('QUALINEX_EMAIL_URL', 'mailto:subham81@yahoo.com'),
+        'whatsapp': os.getenv('QUALINEX_WHATSAPP_URL', 'https://wa.me/919818027177'),
+    }
 
 def render_page(request, template, section=None, **context):
     return render(request, template, {**common(request), 'section': section, **context})
@@ -118,6 +124,6 @@ def method(request): return render_page(request,'practice/method.html','method')
 def contact(request):
     form = EnquiryForm(request.POST or None)
     if request.method == 'POST' and form.is_valid():
-        form.save(); messages.success(request, 'Thank you. Your enquiry has been recorded and will be reviewed confidentially.')
+        form.save(); messages.success(request, 'Thank you. Your query has been recorded and will be reviewed.')
         return redirect('contact')
     return render(request,'practice/contact.html',{**common(request),'section':'contact','form':form})

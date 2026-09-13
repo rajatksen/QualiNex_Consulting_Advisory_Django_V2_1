@@ -23,4 +23,13 @@
   document.querySelectorAll('.desktop-nav a[data-page]').forEach(a=>{
     if(a.dataset.page===section)a.classList.add('active');
   });
+
+  // Experience hero: clickable dimension rail with a restrained push-out effect.
+  document.querySelectorAll('.experience-v31-label').forEach((label)=>{
+    label.addEventListener('click',()=>{
+      const active = label.classList.toggle('is-active');
+      label.setAttribute('aria-pressed', String(active));
+    });
+  });
+
 })();
